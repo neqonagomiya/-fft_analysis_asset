@@ -51,7 +51,7 @@ except KeyboardInterrupt:
 
 print(cl.cstr("Done ") + "rec")
 
-# wav
+# save file
 print(cl.cstr("save as:", color=cl.BLUE))
 np.save(f"{rec_filename}.npy", recdata)
 print("-> " + f"{rec_filename}.npy")
