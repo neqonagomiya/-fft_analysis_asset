@@ -34,6 +34,8 @@ elif ext == ".csv":
 else:
     print(cl.cstr("NOT supported file."))
     sys.exit(1)
+print(cl.cstr("loaded file"))
+
 
 N = len(data)
 window = np.hanning(N)
