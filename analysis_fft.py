@@ -5,6 +5,8 @@ import numpy as np
 import matplotlib.pyplot as plt
 import matplotlib.ticker as pticker
 
+import gc
+
 from cl import Colin
 cl = Colin()
 
@@ -37,6 +39,7 @@ else:
 print(cl.cstr("loaded file"))
 
 
+print("start FFT analysis")
 N = len(data)
 window = np.hanning(N)
 data_w = window * data
@@ -48,6 +51,8 @@ norm_F = norm_F * acf # Correction
 amp_F = np.abs(norm_F)
 Power_F = amp_F ** 2
 
+
+print("plot figure")
 fig, (ax1, ax2) = plt.subplots(nrows=2, ncols=1)
 
 fig.subplots_adjust(bottom=0.15, wspace=0.0, hspace=0.6)
