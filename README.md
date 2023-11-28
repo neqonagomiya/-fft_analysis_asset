@@ -21,19 +21,19 @@ pip install -r requirements.txt
 
 ### code list
 
-- [x]display_sd.py
+- [x] display_sd.py
     - you can see the available audio devices using this code.
-- [x]rec.py
+- [x] rec.py
     - you can record using this code by specifying input/output audio device (default save data as .npy).
-- [x]analysis_fft.py
+- [x] analysis_fft.py
     - you can display fft_graph using this code.
-- [x]convert_file.py
+- [x] convert_file.py
     - you can convert .npy to .csv, and opposit using this code (only support .npy or .csv).
-- [x]make_sinwav.py
+- [x] make_sinwav.py
     - you can make sine wave of any frequency as .wav.
-- [x]cl.py
+- [x] cl.py
     - you can color your uncool terminal.
-- [x]test_cl.py
+- [x] test_cl.py
     - you can test of cl.py.
 
 ### How to process experiment
